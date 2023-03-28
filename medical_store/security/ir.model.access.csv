@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+medical_store.access_medicine_info,access_medicine_info,medical_store.model_medicine_info,base.group_user,1,1,1,1
+medical_store.access_symptoms_info,access_symptoms_info,medical_store.model_symptoms_info,base.group_user,1,1,1,1
+medical_store.access_stock_info,access_stock_info,medical_store.model_stock_info,base.group_user,1,1,1,1
