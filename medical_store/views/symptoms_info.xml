@@ -7,6 +7,7 @@
             <field name="arch" type="xml">
                 <tree>
                     <field name="name"/>
+                    <field name="medicine_ids"/>
                 </tree>
             </field>
         </record>
@@ -19,6 +20,18 @@
                         <group>
                             <field name="name"/>
                         </group>
+                        <notebook>
+                            <page string="medicines">
+                                <field name="medicine_ids">
+                                    <tree editable="bottom">
+                                        <field name="name"/>
+                                        <field name="reference_number"/>
+                                        <field name="manufacturing_date"/>
+                                        <!-- <field name="remaining_months"/> -->
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
                     </sheet>
                 </form>
             </field>

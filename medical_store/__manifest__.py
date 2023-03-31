@@ -5,6 +5,7 @@
     'depends' : [],
     'data' : [
         'security/ir.model.access.csv',
+        'data/ir_sequence_data.xml',
         'views/medicine_info.xml',
         'views/symptoms_info.xml',
         'views/stock_info.xml',
