@@ -11,7 +11,7 @@
                     <field name="manufacturing_date"/>
                     <field name="is_major"/>
                     <field name="expiry_date"/>
-                    <field name="symptom_id"/>
+                    <!-- <field name="symptom_ids"/> -->
                     <field name="dosage_form"/>
                     <!-- <field name="remaining_months"/> -->
                 </tree>
@@ -23,10 +23,10 @@
             <field name="arch" type="xml">
                 <form>
                     <header>
-                        <button name="action_symptoms_detail"
+                        <button name="action_medicine_detail"
                             type="object"
                             class="btn btn-primary"
-                            string="Symptoms detail">
+                            string="Medicine detail">
                         </button>
                     </header>
                     <sheet>
@@ -35,12 +35,7 @@
                             <button name="%(action_stock_info)d"
                                 type="action"
                                 class="oe_stat_button"
-                                icon="fa-pencil" string="Stock">
-                            </button>
-                            <button name="action_medicine_info"
-                                type="object"
-                                class="oe_stat_button"
-                                icon="fa-pencil" string="Stock">
+                                icon="fa-pencil-square-o" string="Stock">
                             </button>
                         </div>
                         <group>
@@ -49,7 +44,7 @@
                             <field name="manufacturing_date"/>
                             <field name="is_major"/>
                             <field name="expiry_date"/>
-                            <field name="symptom_id"/>
+                            <!-- <field name="symptom_ids"/> -->
                             <field name="dosage_form"/>
                             <!-- <field name="remaining_months"/> -->
                        </group>

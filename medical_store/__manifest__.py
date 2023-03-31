@@ -9,6 +9,7 @@
         'views/medicine_info.xml',
         'views/symptoms_info.xml',
         'views/stock_info.xml',
+        'views/medicine_symptoms_info.xml',
     ],
     'installable' : True,
     'application' : True,
