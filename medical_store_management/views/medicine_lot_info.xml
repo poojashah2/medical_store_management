@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record id="medicine_lot_info_tree_view" model="ir.ui.view">
+            <field name="name">medicine.lot.info.tree</field>
+            <field name="model">medicine.lot.info</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="lot"/>
+                    <field name="medicine_name_id"/>
+                    <field name="manufacture_date"/>
+                    <field name="expiry_date"/>
+                    <field name="lot_quantity"/>
+                </tree>
+            </field>
+        </record>
+        <record id="medicine_lot_info_form_view" model="ir.ui.view">
+            <field name="name">medicine.lot.info.form</field>
+            <field name="model">medicine.lot.info</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <field name="state_lot" widget="statusbar" statusbar_visible="draft,done"/>
+                    </header>
+                    <sheet>
+                        <group>
+                            <field name="lot"/>
+                            <field name="medicine_name_id"/>
+                            <field name="manufacture_date"/>
+                            <field name="expiry_date"/>
+                            <field name="lot_quantity"/>
+                        </group>
+                    </sheet>
+                </form> 
+            </field>
+        </record>
+
+        <record id="action_medicine_lot_info" model="ir.actions.act_window">
+           <field name="name">Medicine Lot Info</field>
+           <field name="res_model">medicine.lot.info</field>
+           <field name="view_mode">tree,form</field>
+        </record>
+
+
+        <menuitem id="medicine_lot_info" name="Medicine lot detail" action="action_medicine_lot_info" parent="medical_store" sequence="5"/>
+
+    </data>
+</odoo>

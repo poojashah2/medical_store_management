@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+medical_store_management.access_medicine_info,access_medicine_info,medical_store_management.model_medicine_info,base.group_user,1,1,1,1
+medical_store_management.access_symptoms_info,access_symptoms_info,medical_store_management.model_symptoms_info,base.group_user,1,1,1,1
+medical_store_management.access_medicine_symptoms_info,access_medicine_symptoms_info,medical_store_management.model_medicine_symptoms_info,base.group_user,1,1,1,1
+medical_store_management.access_medicine_lot_info,access_medicine_lot_info,medical_store_management.model_medicine_lot_info,base.group_user,1,1,1,1

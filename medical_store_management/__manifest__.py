@@ -6,9 +6,10 @@
     'data' : [
         'security/ir.model.access.csv',
         'data/ir_sequence_data.xml',
+        'data/ir_sequence_lot.xml',
         'views/medicine_info.xml',
         'views/symptoms_info.xml',
-        'views/stock_info.xml',
+        'views/medicine_lot_info.xml',
         'views/medicine_symptoms_info.xml',
     ],
     'installable' : True,
